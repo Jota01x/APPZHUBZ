@@ -1,41 +1,20 @@
-# APPZ HUB
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-Painel SaaS para criação de sites, geração de scripts, busca de clientes e gerenciamento de extensões.
+# Run and deploy your AI Studio app
 
-Aplicação 100% front-end (React + Vite + Tailwind CSS), com dados salvos em `localStorage` no navegador. Não depende de backend/servidor.
+This contains everything you need to run your app locally.
 
-## Rodar localmente
+View your app in AI Studio: https://ai.studio/apps/75180fd6-612f-44e1-bc46-769d35bae6e1
 
-**Pré-requisito:** Node.js 18+
+## Run Locally
 
-```bash
-npm install
-npm run dev
-```
+**Prerequisites:**  Node.js
 
-Abre em `http://localhost:5173`.
 
-## Build de produção
-
-```bash
-npm run build
-npm run preview   # para testar o build localmente
-```
-
-Os arquivos finais ficam em `dist/`.
-
-## Deploy
-
-### GitHub
-1. Crie um repositório novo no GitHub.
-2. Suba esta pasta inteira (não precisa subir `node_modules` nem `dist`, já estão no `.gitignore`).
-
-### Vercel
-1. Acesse vercel.com e clique em **Add New > Project**.
-2. Importe o repositório do GitHub.
-3. A Vercel detecta automaticamente o framework **Vite** (configuração já incluída em `vercel.json`).
-4. Clique em **Deploy**. Pronto — sem variáveis de ambiente necessárias.
-
-## Acesso ao painel
-
-O login usa uma senha fixa definida em `src/components/Login.tsx` (constante `4080`). Altere esse valor antes de divulgar o link publicamente, se quiser trocar a chave de acesso.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
