@@ -1,0 +1,6 @@
+{
+  "name": "APPZ HUB",
+  "description": "Uma plataforma SaaS completa para criação de sites, geração de scripts, busca de clientes e gerenciamento de extensões.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
